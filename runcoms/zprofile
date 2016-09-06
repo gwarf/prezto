@@ -79,3 +79,5 @@ export TERMINAL='urxvt'
 [ -f ~/.alias ] && source ~/.alias
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export TERM=xterm-256color
