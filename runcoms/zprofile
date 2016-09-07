@@ -74,10 +74,10 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 
-export TERMINAL='urxvt'
-
 [ -f ~/.alias ] && source ~/.alias
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export TERM=xterm-256color
+# Fixing 256 colors within terminator
+#export TERM=xterm-256color
+export TERMINAL='terminology'
