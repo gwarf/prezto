@@ -81,3 +81,13 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 # Fixing 256 colors within terminator
 #export TERM=xterm-256color
 export TERMINAL='terminology'
+
+# Named directories
+hash -d repos=~/repos
+hash -d Desktop=~/Desktop
+hash -d Downloads=~/Downloads
+hash -d Documents=~/Documents
+hash -d Docs=~/Documents
+hash -d GDocs=~/GoogleDrive
+hash -d Dropbox=~/Dropbox
+hash -d dev=~/dev
