@@ -77,9 +77,13 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Fixing 256 colors within terminator
-export TERM=xterm-256color
-#export TERMINAL='terminator'
-export TERMINAL='terminology'
+# https://gist.github.com/KevinGoodsell/744284
+#export TERM=xterm-256color
+#export TERM=screen-256color
+#export TERM=screen-256color-bce
+#export TERM=screen
+export TERMINAL='terminator'
+#export TERMINAL='terminology'
 
 # Named directories
 hash -d repos=~/repos
