@@ -22,4 +22,7 @@ if (( $+commands[fortune] )); then
   fi
 fi
 
-[ -f ~/.alias ] && source ~/.alias
+if [ -f ~/.alias ]; then
+  unalias grc
+  source ~/.alias
+fi
