@@ -78,12 +78,14 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 # Fixing 256 colors within terminator
 # https://gist.github.com/KevinGoodsell/744284
-export TERM=xterm-256color
+export TERM=screen-256color
 #export TERM=screen-256color
 #export TERM=screen-256color-bce
 #export TERM=screen
 export TERMINAL='terminator'
 #export TERMINAL='terminology'
+
+export QT_STYLE_OVERRIDE=adwaita
 
 # Named directories
 hash -d repos=~/repos
@@ -94,3 +96,6 @@ hash -d Docs=~/Documents
 hash -d GDocs=~/GoogleDrive
 hash -d Dropbox=~/Dropbox
 hash -d dev=~/dev
+
+# Try to enable automatic rehash
+zstyle ':completion:*' rehash true
