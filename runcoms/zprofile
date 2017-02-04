@@ -97,6 +97,7 @@ hash -d GDocs=~/GoogleDrive
 hash -d Dropbox=~/Dropbox
 hash -d dev=~/dev
 
+# Disable if facing slowing-down completion
 # Try to enable automatic rehash
 zstyle ':completion:*' rehash true
 
