@@ -104,5 +104,5 @@ zstyle ':completion:*' rehash true
 # Enable auto switching the Ruby version based on the .ruby-version file
 zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
-source /usr/share/chruby/chruby.sh
-source /usr/share/chruby/auto.sh
+[ -f /usr/share/chruby/chruby.sh ] && source /usr/share/chruby/chruby.sh
+[ -f /usr/share/chruby/auto.sh ] && source /usr/share/chruby/auto.sh
