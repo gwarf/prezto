@@ -14,4 +14,6 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(jump shell zsh)"
+if command -v "jump" >/dev/null 2>&1; then
+  eval "$(jump shell zsh)"
+fi
