@@ -106,3 +106,10 @@ zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
 [ -f /usr/share/chruby/chruby.sh ] && source /usr/share/chruby/chruby.sh
 [ -f /usr/share/chruby/auto.sh ] && source /usr/share/chruby/auto.sh
+
+# TODO check that vboxmanage completion is available
+# /usr/share/zsh/site-functions/_virtualbox
+if type compdef &>/dev/null; then
+  compdef vboxmanage=vboxmanage
+  compdef vboxheadless=vboxheadless
+fi
