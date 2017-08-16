@@ -224,3 +224,10 @@ zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 # zstyle ':prezto:module:utility' safe-ops 'yes'
+
+# Disable virtualenvwrapper
+# see https://github.com/sorin-ionescu/prezto/tree/master/modules/python
+#zstyle ':prezto:module:python:virtualenv' initialize 'no'
+
+setopt correctall
+alias sudo='nocorrect sudo'
