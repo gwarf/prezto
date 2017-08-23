@@ -138,7 +138,7 @@ zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 #
 
 # Auto switch the Python virtualenv on directory change.
-# zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
+zstyle ':prezto:module:python:virtualenv' auto-switch 'no'
 
 # Automatically initialize virtualenvwrapper if pre-requisites are met.
 # zstyle ':prezto:module:python:virtualenv' initialize 'yes'
@@ -225,9 +225,9 @@ zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 # behavior.
 # zstyle ':prezto:module:utility' safe-ops 'yes'
 
-# Disable virtualenvwrapper
-# see https://github.com/sorin-ionescu/prezto/tree/master/modules/python
-#zstyle ':prezto:module:python:virtualenv' initialize 'no'
+#
+# Misc
+#
 
 setopt correctall
 alias sudo='nocorrect sudo'
