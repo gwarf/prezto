@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'pacman' \
   'python' \
   'ruby' \
+  'docker' \
   'syntax-highlighting' \
   'history-substring-search' \
   'prompt'
