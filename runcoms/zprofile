@@ -89,13 +89,12 @@ export QT_STYLE_OVERRIDE=adwaita
 
 # Named directories
 hash -d repos=~/repos
-hash -d Desktop=~/Desktop
 hash -d Downloads=~/Downloads
 hash -d Documents=~/Documents
 hash -d Docs=~/Documents
 hash -d GDocs=~/GoogleDrive
 hash -d Dropbox=~/Dropbox
-hash -d dev=~/dev
+hash -d notes=~/notes
 
 # Disable if facing slowing-down completion
 # Try to enable automatic rehash
