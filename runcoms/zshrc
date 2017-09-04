@@ -25,6 +25,8 @@ fi
 # TODO check that vboxmanage completion is available
 # /usr/share/zsh/site-functions/_virtualbox
 if type compdef &>/dev/null; then
-  compdef vboxmanage=VBoxManage
-  compdef vboxheadless=VBoxHeadless
+  if type VBoxManage &>/dev/null; then
+    compdef vboxmanage=VBoxManage
+    compdef vboxheadless=VBoxHeadless
+  fi
 fi
