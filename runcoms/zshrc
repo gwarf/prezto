@@ -14,6 +14,8 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+[ -f ~/.appdb-env.sh ] && source ~/.appdb-env.sh
+
 if command -v "jump" >/dev/null 2>&1; then
   eval "$(jump shell zsh)"
 fi
